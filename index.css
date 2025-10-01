@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding: 1% 0;
+    background-color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav {
+    display: flex;
+    gap: 10px;
+    width: 400px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav .nav-button {
+    padding: 2% 10%;
+    background-color: rgb(72, 75, 255);
+    border: 0px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.05s ease-in-out;
+    font-size: 2em;
+}
+
+header .nav-button:hover {
+    background-color: rgb(28, 31, 255);
+}
+
+
+
+header #header-profile {
+    display: flex;
+    margin: 0 2%;
+    height: calc(1vw + 4vh);
+    width: calc(1vw + 4vh);
+    border: 2px solid white;
+    border-radius: calc((1vw + 4vh) / 2);
+    background-color: white;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 66%;
+    box-sizing: content-box;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    font-size: 25px;
+    padding: 2% 0;
+}
+
+.posts-container .post {
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1%;
+    border: 2px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.posts-container .post .post-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.posts-container .post .post-header-container .post-profile {
+    height: 30px;
+    width: 30px;
+    border: 0px solid;
+    border-radius: 15px;
+}
+
+.posts-container .post .post-image {
+    width: 95%;
+    margin: 5% 0;
+}
+
+.posts-container .post-footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(212, 212, 212);
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .posts-container {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .posts-container .post {
+        width: 75%;
+    }
+
+}
