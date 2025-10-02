@@ -1,0 +1,42 @@
+
+button  {
+  padding: 10px 20px;
+  border: none;
+  background: #227bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: rgb(28, 31, 255);
+}
+
+
+h1 ~ form {
+  background-color: rgb(228, 228, 228);
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+h1 + form {
+  margin-top: 30px;
+}
+
+
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 16px;
+  padding: 20px;
+}
+
+main > form {
+  font-size: 20px;
+}
+
