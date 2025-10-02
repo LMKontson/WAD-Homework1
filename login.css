@@ -1,0 +1,162 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding: 1% 0;
+    background-color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav {
+    display: flex;
+    gap: 10px;
+    width: 400px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header > .nav .nav-button {
+    padding: 2% 10%;
+    background-color: rgb(72, 75, 255);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.05s ease-in-out;
+    font-size: 2em;
+}
+
+header .nav-button:hover {
+    background-color: rgb(28, 31, 255);
+}
+
+#header-profile {
+    margin: 0 2%;
+    height: calc(1vw + 4vh);
+    width: calc(1vw + 4vh);
+    border: 2px solid white;
+    border-radius: calc((1vw + 4vh) / 2);
+    background-color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+}
+
+
+.login-form-container {
+    background-color: rgb(228, 228, 228);
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(212, 212, 212);
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-title, .create-account-link, .or-text, .login-instruction, .forgot-password-link {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.welcome-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.create-account-link, .forgot-password-link {
+    color: rgb(72, 75, 255);
+    text-decoration: none;
+}
+
+.create-account-link:hover, .forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+.or-text, .login-instruction {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+form input {
+    width: 50%;
+    max-width: 400px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.login-button {
+    width: 40%;
+    max-width: 160px;
+    padding: 15px;
+    background-color: rgb(72, 75, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.login-button:hover {
+    background-color: rgb(28, 31, 255);
+}
+
+.login-button:active {
+    transform: translateY(1px);
+}
+
+
+.welcome-title + .create-account-link {
+    margin-top: 15px;
+}
+
+.or-text ~ .login-instruction {
+    margin-top: 10px;
+}
