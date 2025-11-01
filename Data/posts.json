@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "Alice Johnson",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-28T09:15:00Z",
+    "message": "Anyone knows in which room is the lab today?",
+    "image": "https://placehold.co/600x400"
+  },
+  {
+    "id": 2,
+    "author": "Brian Smith",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-29T11:30:00Z",
+    "message": "Project meeting moved to 3 PM.",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "author": "Charlie Lee",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-30T14:00:00Z",
+    "message": "New coffee machine in the break room!",
+    "image": "https://placehold.co/600x400"
+  },
+  {
+    "id": 4,
+    "author": "Diana Carter",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-30T17:00:00Z",
+    "message": "Reminder: Submit your weekly reports.",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "author": "Evan Moore",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-31T08:45:00Z",
+    "message": "Halloween office photos uploaded!",
+    "image": "https://placehold.co/600x400"
+  },
+  {
+    "id": 6,
+    "author": "Fiona Blake",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-31T09:10:00Z",
+    "message": "Anyone up for lunch at noon?",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "author": "George Miller",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-31T10:30:00Z",
+    "message": "Server maintenance tonight 10 PM.",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "author": "Hannah Davis",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-31T12:00:00Z",
+    "message": "Happy Friday everyone!",
+    "image": "https://placehold.co/600x400"
+  },
+  {
+    "id": 9,
+    "author": "Ian Brown",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-10-31T14:45:00Z",
+    "message": "Check out the new documentation portal.",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "author": "Julia Clark",
+    "profileImage": "https://placehold.co/50x50",
+    "time": "2025-11-01T08:00:00Z",
+    "message": "Welcome our new intern, Sam!",
+    "image": "https://placehold.co/600x400"
+  }
+]
