@@ -7,25 +7,32 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-        <header>
-
-            <div class="nav">
-
-                <a class="nav-button" href="index.html">
-                    Home
-                </a>
-
-                <a href="login.html">
-                    <img id="header-profile-small" src="images/profile.jpg">
-                </a>
-
+      <header>
+          <div class="nav">
+              <a class="nav-button" href="index.html">
+                  Home
+              </a>
+              <div class="user-menu-mobile">
+                <img id="header-profile-small" src="images/profile.jpg">
+                <div class="dropdown-menu" id="dropdownMenuMobile">
+                    <div>John Doe</div>
+                    <div>john.doe@ut.ee</div>
+                    <button class="logout-button" onclick="window.location.href='login.html'">logout</button>
+                </div>
             </div>
+          </div>
 
-            <a id="header-profile-link" href="login.html">
-                <img id="header-profile" src="images/profile.jpg" href="login.html">
-            </a>
-
-        </header>
+          <div class="user-menu">
+              <a id="header-profile-link" href="#">
+                  <img id="header-profile" src="images/profile.jpg">
+              </a>
+              <div class="dropdown-menu" id="dropdownMenu">
+                  <div>John Doe</div>
+                  <div>john.doe@ut.ee</div>
+                  <button class="logout-button" onclick="window.location.href='login.html'">logout</button>
+              </div>
+          </div>
+      </header>
 
   <main>
     <h1>Create post</h1>
@@ -45,5 +52,45 @@
   </main>
 
   <footer>Footer</footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Desktop dropdown
+          const profileToggle = document.getElementById('header-profile');
+          const dropdownMenu = document.getElementById('dropdownMenu');
+          
+          if (profileToggle && dropdownMenu) {
+              profileToggle.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  dropdownMenu.classList.toggle('show');
+              });
+              
+              // Close desktop dd when clicking outside
+              document.addEventListener('click', function(e) {
+                  if (!e.target.closest('.user-menu')) {
+                      dropdownMenu.classList.remove('show');
+                  }
+              });
+          }
+
+          // Mobile dropdown
+          const profileToggleMobile = document.getElementById('header-profile-small');
+          const dropdownMenuMobile = document.getElementById('dropdownMenuMobile');
+          
+          if (profileToggleMobile && dropdownMenuMobile) {
+              profileToggleMobile.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  dropdownMenuMobile.classList.toggle('show');
+              });
+              
+              // Close mobile dd when clicking outside
+              document.addEventListener('click', function(e) {
+                  if (!e.target.closest('.user-menu-mobile')) {
+                      dropdownMenuMobile.classList.remove('show');
+                  }
+              });
+          }
+      });
+    </script>
+
 </body>
 </html>
