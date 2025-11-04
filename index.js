@@ -1,23 +1,21 @@
 // Fetching data from endpoint
-async function fetchData() {
-    // const url = 'https://api.myjson.online/v1/records/15692323-ec97-4db7-9681-6b537d0e1498';
-    const url = 'https://LMKontson.github.io/WAD-Homework1/Data/posts.json';
+// async function fetchData() {
+//     const url = 'https://api.myjson.online/v1/records/15692323-ec97-4db7-9681-6b537d0e1498';
     
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Error: ${response.status}`)
-        }
+//     try {
+//         const response = await fetch(url);
+//         if (!response.ok) {
+//             throw new Error(`Error: ${response.status}`)
+//         }
 
-        const json = await response.json();
+//         const json = await response.json();
 
-        // return json.data;
-        return json;
+//         return json;
 
-    } catch (error) {
-        console.error(error.message);
-    }
-}
+//     } catch (error) {
+//         console.error(error.message);
+//     }
+// }
 
 
 window.onload = async function () {
@@ -57,7 +55,8 @@ window.onload = async function () {
         });
     }
 
-    const data = await fetchData();
+    // const data = await fetchData();
+    const data = await fetch("Data/posts.json");
 
     const postsContainer = document.getElementsByClassName('posts-container')[0];
 
