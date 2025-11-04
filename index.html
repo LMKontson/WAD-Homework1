@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="index.css">
 
+    <script src="index.js"></script>
+
     <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport"/>
 
 </head>
@@ -42,67 +44,6 @@
         </header>
 
         <div class="posts-container">
-
-            <div class="post">
-                <div class="post-header-container">
-                    <img class="post-profile" src="images/profile.jpg">
-                    <div class="post-time">Oct 2, 2022</div>
-                </div>
-                <div class="post-footer-container">
-                    <div class="post-message">Anyone knows in which room is the lab today?</div>
-                    <div class="post-thumbsup">👍</div>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header-container">
-                    <img class="post-profile" src="images/profile.jpg">
-                    <div class="post-time">Oct 2, 2022</div>
-                </div>
-                <img class="post-image" src="https://placehold.co/600x400"></img>
-                <div class="post-footer-container">
-                    <div class="post-message">Anyone knows in which room is the lab today?</div>
-                    <div class="post-thumbsup">👍</div>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header-container">
-                    <img class="post-profile" src="images/profile.jpg">
-                    <div class="post-time">Oct 2, 2022</div>
-                </div>
-                <img class="post-image" src="https://placehold.co/600x400"></img>
-                <div class="post-footer-container">
-                    <div class="post-message">Anyone knows in which room is the lab today?</div>
-                    <div class="post-thumbsup">👍</div>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header-container">
-                    <img class="post-profile" src="images/profile.jpg">
-                    <div class="post-time">Oct 2, 2022</div>
-                </div>
-                <img class="post-image" src="https://placehold.co/600x400"></img>
-                <div class="post-footer-container">
-                    <div class="post-message">Anyone knows in which room is the lab today?</div>
-                    <div class="post-thumbsup">👍</div>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header-container">
-                    <img class="post-profile" src="images/profile.jpg">
-                    <div class="post-time">Oct 2, 2022</div>
-                </div>
-                <img class="post-image" src="https://placehold.co/600x400"></img>
-                <div class="post-footer-container">
-                    <div class="post-message">Anyone knows in which room is the lab today?</div>
-                    <div class="post-thumbsup">👍</div>
-                </div>
-            </div>
-
-
         </div>
 
         <footer>
@@ -110,46 +51,6 @@
         </footer>
 
     </div>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Desktop dropdown
-            const profileToggle = document.getElementById('header-profile');
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            
-            if (profileToggle && dropdownMenu) {
-                profileToggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    dropdownMenu.classList.toggle('show');
-                });
-                
-                // Close desktop dd when clicking outside
-                document.addEventListener('click', function(e) {
-                    if (!e.target.closest('.user-menu')) {
-                        dropdownMenu.classList.remove('show');
-                    }
-                });
-            }
-
-            // Mobile dropdown
-            const profileToggleMobile = document.getElementById('header-profile-small');
-            const dropdownMenuMobile = document.getElementById('dropdownMenuMobile');
-            
-            if (profileToggleMobile && dropdownMenuMobile) {
-                profileToggleMobile.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    dropdownMenuMobile.classList.toggle('show');
-                });
-                
-                // Close mobile dd when clicking outside
-                document.addEventListener('click', function(e) {
-                    if (!e.target.closest('.user-menu-mobile')) {
-                        dropdownMenuMobile.classList.remove('show');
-                    }
-                });
-            }
-        });
-        </script>
-
 </body>
 
 </html>

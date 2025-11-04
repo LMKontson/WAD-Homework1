@@ -120,6 +120,12 @@ header #header-profile-small {
     width: 100%
 }
 
+.post-author-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
 footer {
     display: flex;
     width: 100%;
