@@ -58,6 +58,8 @@ window.onload = async function () {
     // const data = await fetchData();
     const data = await fetch("Data/posts.json");
 
+    console.log(data);
+
     const postsContainer = document.getElementsByClassName('posts-container')[0];
 
     data.forEach(postData => {
