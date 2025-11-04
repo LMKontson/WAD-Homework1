@@ -56,7 +56,8 @@ window.onload = async function () {
     }
 
     // const data = await fetchData();
-    const data = await fetch("Data/posts.json");
+    const response = await fetch("Data/posts.json");
+    const data = await response.json();
 
     console.log(data);
 
